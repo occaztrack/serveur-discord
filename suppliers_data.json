@@ -1,0 +1,211 @@
+{
+  "server_name": "Discord Suppliers Marketplace",
+  "server_description": "Sélection premium de fournisseurs par catégorie - Plus de 5000 fournisseurs disponibles dans le pack complet",
+  "pack_link": "https://drive.google.com/your-pack-link-here",
+  "categories": {
+    "cosmétique": {
+      "emoji": "💄",
+      "description": "Fournisseurs de cosmétiques et produits de beauté (Ceci est une sélection - Accédez au pack complet pour 5000+ options)",
+      "suppliers": [
+        {
+          "name": "HABACHIYA FOURNISSEUR",
+          "country": "🇫🇷 France",
+          "website": "N/A",
+          "contact": "@habachiy_fournisseu",
+          "category_type": "Cosmétique"
+        },
+        {
+          "name": "ARGAN MARKED",
+          "country": "🇩🇰 Pays Nordique",
+          "website": "https://arganmarked.dk/",
+          "contact": "+4924789888",
+          "category_type": "Cosmétique"
+        },
+        {
+          "name": "HERBORISTERIE CHARIF",
+          "country": "🇲🇦 Maroc",
+          "website": "N/A",
+          "contact": "+212 0537514744",
+          "category_type": "Cosmétique"
+        },
+        {
+          "name": "LA ROCHELLE COSMETICS TRADING LLC",
+          "country": "🇦🇪 Dubai",
+          "website": "N/A",
+          "contact": "+971 56 445 0043",
+          "category_type": "Cosmétique"
+        },
+        {
+          "name": "BARBER SCISSORS",
+          "country": "🇵🇰 Pakistan",
+          "website": "N/A",
+          "contact": "0092 3006102430",
+          "category_type": "Cosmétique"
+        }
+      ]
+    },
+    "personnalisation-textile": {
+      "emoji": "🎨",
+      "description": "Services de personnalisation textile (Ceci est une sélection - Accédez au pack complet pour 5000+ options)",
+      "suppliers": [
+        {
+          "name": "Raja",
+          "country": "🇫🇷 France",
+          "website": "https://www.raja.fr",
+          "contact": "01 49 90 49 90",
+          "category_type": "Personnalisation"
+        },
+        {
+          "name": "Westpack",
+          "country": "🇩🇰 Denmark",
+          "website": "https://www.westpack.comi",
+          "contact": "09 75 18 58 88",
+          "category_type": "Personnalisation"
+        },
+        {
+          "name": "Usherwood Accounting Services Limited",
+          "country": "🇳🇿 New Zealand",
+          "website": "www.usherwoodaccounting.co.nz/",
+          "contact": "+64 9 4466075",
+          "category_type": "Personnalisation"
+        },
+        {
+          "name": "ZAVATER LUIGI & C. S.R.L.",
+          "country": "🇮🇹 Italy",
+          "website": "www.zavater-logistica.it/",
+          "contact": "+39 0459250422",
+          "category_type": "Personnalisation"
+        }
+      ]
+    },
+    "textile-femme": {
+      "emoji": "👗",
+      "description": "Textiles et vêtements pour femme (Ceci est une sélection - Accédez au pack complet pour 5000+ options)",
+      "suppliers": [
+        {
+          "name": "Aktiksportswear",
+          "country": "🇨🇦 Canada",
+          "website": "https://www.aktiksportswear.com",
+          "contact": "86-13827277484",
+          "category_type": "Textile Femme"
+        },
+        {
+          "name": "Eationsportswear",
+          "country": "🇺🇸 US",
+          "website": "https://www.eationsportswear.com",
+          "contact": "1 5917658873",
+          "category_type": "Textile Femme"
+        },
+        {
+          "name": "Ngapparels",
+          "country": "🇮🇳 India",
+          "website": "https://www.ngapparels.in/sportswear-manufacturer-india",
+          "contact": "N/A",
+          "category_type": "Textile Femme"
+        },
+        {
+          "name": "Gizcetoptan",
+          "country": "🇹🇷 Turkey",
+          "website": "https://www.gizcetoptan.com",
+          "contact": "N/A",
+          "category_type": "Textile Femme"
+        },
+        {
+          "name": "3 LADIES",
+          "country": "🇫🇷 France",
+          "website": "https://cifafashion.com/fr/grossistes/grossiste-3ladies",
+          "contact": "33 1 41 61 77 06",
+          "category_type": "Textile Femme"
+        }
+      ]
+    },
+    "textile-homme": {
+      "emoji": "👔",
+      "description": "Textiles et vêtements pour homme (Ceci est une sélection - Accédez au pack complet pour 5000+ options)",
+      "suppliers": [
+        {
+          "name": "formativesports",
+          "country": "🇵🇰 Pakistan",
+          "website": "www.formativesports.com",
+          "contact": "+92 333 2504174",
+          "category_type": "Textile Homme"
+        },
+        {
+          "name": "textileinfomedia",
+          "country": "🇮🇳 India",
+          "website": "www.textileinfomedia.com",
+          "contact": "N/A",
+          "category_type": "Textile Homme"
+        },
+        {
+          "name": "Shandong saier Textile",
+          "country": "🇨🇳 China",
+          "website": "N/A",
+          "contact": "+86 13153960095",
+          "category_type": "Textile Homme"
+        },
+        {
+          "name": "NAJOUA ART COUTURE",
+          "country": "🇲🇦 Maroc",
+          "website": "N/A",
+          "contact": "Instagram: @najoua_art_couture",
+          "category_type": "Textile Homme"
+        }
+      ]
+    },
+    "accessoire-tech": {
+      "emoji": "🔌",
+      "description": "Accessoires technologiques (Ceci est une sélection - Accédez au pack complet pour 5000+ options)",
+      "suppliers": [
+        {
+          "name": "WE ACCESSORY",
+          "country": "🇨🇳 China",
+          "website": "https://www.weaccessory.com",
+          "contact": "0086 755 3681 8832",
+          "category_type": "Accessoire Tech"
+        },
+        {
+          "name": "STORE PHONE",
+          "country": "🇫🇷 France",
+          "website": "https://storephone.fr",
+          "contact": "09 83 06 80 15",
+          "category_type": "Accessoire Tech"
+        },
+        {
+          "name": "Wuhan Joshine Cross-Border E-Commerce Co., Ltd.",
+          "country": "🇨🇳 China",
+          "website": "N/A",
+          "contact": "0086-27-13682680011",
+          "category_type": "Accessoire Tech"
+        }
+      ]
+    },
+    "tech-telephone": {
+      "emoji": "📱",
+      "description": "Accessoires et équipements téléphoniques (Ceci est une sélection - Accédez au pack complet pour 5000+ options)",
+      "suppliers": [
+        {
+          "name": "We Accessory",
+          "country": "🇨🇳 China",
+          "website": "N/A",
+          "contact": "0086-755-36818832",
+          "category_type": "Tech Telephone"
+        },
+        {
+          "name": "excellis",
+          "country": "🇫🇷 France",
+          "website": "https://excelliscommunication.com/",
+          "contact": "N/A",
+          "category_type": "Tech Telephone"
+        },
+        {
+          "name": "Metaverse scientific & Cosmetiqueratory equipment trading co. LLC",
+          "country": "🇦🇪 Dubai",
+          "website": "N/A",
+          "contact": "971 56 926 0882",
+          "category_type": "Tech Telephone"
+        }
+      ]
+    }
+  }
+}
