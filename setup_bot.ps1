@@ -15,13 +15,18 @@ function Pause {
 # 1. Vérifier Python
 Write-Host "✓ Étape 1/5: Vérification de Python..." -ForegroundColor Cyan
 try {
-    $pythonVersion = python --version 2>&1
+    $pythonVersion = py --version 2>&1
     Write-Host "✅ Python trouvé: $pythonVersion" -ForegroundColor Green
 } catch {
-    Write-Host "❌ Python n'est pas installé!" -ForegroundColor Red
-    Write-Host "Téléchargez Python depuis: https://www.python.org/downloads/" -ForegroundColor Yellow
-    Pause
-    exit
+    try {
+        $pythonVersion = python --version 2>&1
+        Write-Host "✅ Python trouvé: $pythonVersion" -ForegroundColor Green
+    } catch {
+        Write-Host "❌ Python n'est pas installé!" -ForegroundColor Red
+        Write-Host "Téléchargez Python depuis: https://www.python.org/downloads/" -ForegroundColor Yellow
+        Pause
+        exit
+    }
 }
 
 # 2. Demander le token
@@ -67,11 +72,11 @@ $requirementsFile = Join-Path $scriptPath "requirements.txt"
 
 if (Test-Path $requirementsFile) {
     try {
-        pip install -r $requirementsFile --quiet
+        py -m pip install -r $requirementsFile --quiet
         Write-Host "✅ Dépendances installées!" -ForegroundColor Green
     } catch {
         Write-Host "⚠️  Erreur lors de l'installation des dépendances" -ForegroundColor Yellow
-        Write-Host "Essayez manuellement: pip install -r requirements.txt" -ForegroundColor Yellow
+        Write-Host "Essayez manuellement: py -m pip install -r requirements.txt" -ForegroundColor Yellow
     }
 } else {
     Write-Host "❌ Fichier requirements.txt non trouvé!" -ForegroundColor Red
@@ -102,7 +107,7 @@ Write-Host ""
 $botFile = Join-Path $scriptPath "bot.py"
 
 if (Test-Path $botFile) {
-    python $botFile
+    py $botFile
 } else {
     Write-Host "❌ Fichier bot.py non trouvé!" -ForegroundColor Red
     Write-Host "Assurez-vous d'être dans le bon dossier" -ForegroundColor Yellow

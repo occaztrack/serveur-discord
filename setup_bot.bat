@@ -10,12 +10,15 @@ echo.
 
 REM Vérifier Python
 echo Vérification de Python...
-python --version >nul 2>&1
+py --version >nul 2>&1
 if errorlevel 1 (
-    echo ❌ Python n'est pas installé!
-    echo Téléchargez Python depuis: https://www.python.org/downloads/
-    pause
-    exit /b
+    python --version >nul 2>&1
+    if errorlevel 1 (
+        echo ❌ Python n'est pas installé!
+        echo Téléchargez Python depuis: https://www.python.org/downloads/
+        pause
+        exit /b
+    )
 )
 
 echo ✅ Python trouvé!
@@ -51,10 +54,10 @@ echo.
 REM Installer dépendances
 echo ✓ Installation des dépendances...
 echo Cela peut prendre quelques minutes...
-pip install -r requirements.txt --quiet
+py -m pip install -r requirements.txt --quiet
 if errorlevel 1 (
     echo ⚠️  Erreur lors de l'installation
-    echo Essayez manuellement: pip install -r requirements.txt
+    echo Essayez manuellement: py -m pip install -r requirements.txt
 )
 
 echo ✅ Dépendances installées!
@@ -77,6 +80,6 @@ echo.
 echo ════════════════════════════════════════════════════
 echo.
 
-python bot.py
+py bot.py
 
 pause
