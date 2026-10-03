@@ -54,13 +54,21 @@ echo.
 REM Installer dépendances
 echo ✓ Installation des dépendances...
 echo Cela peut prendre quelques minutes...
-py -m pip install -r requirements.txt --quiet
+echo.
+py -m pip install discord.py python-dotenv
 if errorlevel 1 (
-    echo ⚠️  Erreur lors de l'installation
-    echo Essayez manuellement: py -m pip install -r requirements.txt
+    echo.
+    echo ❌ ERREUR lors de l'installation des dépendances!
+    echo.
+    echo Essayez manuellement dans cmd:
+    echo   py -m pip install discord.py python-dotenv
+    echo.
+    pause
+    exit /b
 )
 
-echo ✅ Dépendances installées!
+echo.
+echo ✅ Dépendances installées avec succès!
 echo.
 
 REM Lancer le bot

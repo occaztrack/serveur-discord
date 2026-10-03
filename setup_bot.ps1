@@ -72,11 +72,17 @@ $requirementsFile = Join-Path $scriptPath "requirements.txt"
 
 if (Test-Path $requirementsFile) {
     try {
-        py -m pip install -r $requirementsFile --quiet
-        Write-Host "✅ Dépendances installées!" -ForegroundColor Green
+        Write-Host ""
+        py -m pip install discord.py python-dotenv
+        Write-Host ""
+        Write-Host "✅ Dépendances installées avec succès!" -ForegroundColor Green
     } catch {
-        Write-Host "⚠️  Erreur lors de l'installation des dépendances" -ForegroundColor Yellow
-        Write-Host "Essayez manuellement: py -m pip install -r requirements.txt" -ForegroundColor Yellow
+        Write-Host ""
+        Write-Host "❌ ERREUR lors de l'installation des dépendances" -ForegroundColor Red
+        Write-Host "Essayez manuellement: py -m pip install discord.py python-dotenv" -ForegroundColor Yellow
+        Write-Host ""
+        Pause
+        exit
     }
 } else {
     Write-Host "❌ Fichier requirements.txt non trouvé!" -ForegroundColor Red
